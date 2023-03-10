@@ -11,7 +11,7 @@ clean-env:
 	rm -rf env
 
 run:
-	$(CONDA_ACTIVATE); conda activate ./env; PYTHONPATH='./src' python -m app req1 --optional-arg opt1
+	$(CONDA_ACTIVATE); conda activate ./env; python example_model.py
 
 .DEFAULT_GOAL := help
 .PHONY: help
